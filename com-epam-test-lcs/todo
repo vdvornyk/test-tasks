@@ -1,0 +1,16 @@
+1)
+----[begin]----
+Given a sequence, write a program to detect cycles within it.
+
+Input sample:
+A file containing a sequence of numbers (space delimited). The file can have multiple such lines. e.g
+
+2 0 6 3 1 6 3 1 6 3 1
+Ensure to account for numbers that have more than one digit eg. 12. If there is no sequence, ignore that line.
+
+Output sample:
+Print to stdout the first sequence you find in each line. Ensure that there are no trailing empty spaces on each line you print. e.g.
+
+6 3 1
+---[end]---
+
