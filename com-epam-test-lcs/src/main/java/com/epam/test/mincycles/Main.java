@@ -6,21 +6,13 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String s = "6 1 3 6 1 3 6 1 3";
+		String s = "6 1 3 6 11111 3 6 11111 3";
 
-		Suffix[] sa = StringUtils.getSortSuffixSet(s);
-
-		for (Suffix suffix : sa) {
-			System.out.println(suffix.toString());
-		}
-
-		String res = StringUtils.getCyclesString(s);
+		String res = CyclesUtils.getCyclesString(s);
 		if (res != null) {
-			System.out.println("result:" + res);
+			System.out.println("result:" + res.trim());
 		} else {
 			System.out.println("No cycles");
 		}
-
 	}
-
 }
