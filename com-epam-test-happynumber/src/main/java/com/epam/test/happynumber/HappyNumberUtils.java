@@ -5,12 +5,9 @@ import java.util.LinkedHashSet;
 
 public class HappyNumberUtils {
 
-	public static int isHappy(String line) throws NumberFormatException {
+	public static int isHappy(String line) {
 
 		long number = Integer.parseInt(line);
-		if (number <= 0) {
-			throw new NumberFormatException("String " + number + " must be greater then 0");
-		}
 
 		long squareSum = 0;
 		int digit = 0;
