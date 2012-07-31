@@ -1,7 +1,6 @@
 package com.epam.test.happynumber;
 
 import java.util.HashSet;
-import java.util.LinkedHashSet;
 
 public class HappyNumberUtils {
 
@@ -11,7 +10,7 @@ public class HappyNumberUtils {
 
 		long squareSum = 0;
 		int digit = 0;
-		HashSet<Long> cycle = new LinkedHashSet<Long>();
+		HashSet<Long> cycle = new HashSet<Long>();
 		while (number != 1 && cycle.add(number)) {
 			squareSum = 0;
 			while (number > 0) {
