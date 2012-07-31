@@ -9,7 +9,7 @@ import org.apache.commons.io.FileUtils;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		List<String> lines = FileUtils.readLines(new File(args[0]));
+		List<String> lines = readLines((args[0]));
 		for (String line : lines) {
 			try {
 				System.out.println(HappyNumberUtils.isHappy(line));
@@ -17,5 +17,9 @@ public class Main {
 
 			}
 		}
+	}
+
+	public static List<String> readLines(String path) throws IOException {
+		return FileUtils.readLines(new File(path));
 	}
 }
