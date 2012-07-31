@@ -12,6 +12,8 @@ public class CyclesTest {
 		Assert.assertEquals("1 2 3", CyclesUtils.getCyclesString("893 329 32 1 2 3 1 2 3"));
 		Assert.assertEquals("66 3 1", CyclesUtils.getCyclesString("2 0 6 3 1 66 3 1 66 3 1"));
 		Assert.assertEquals("6 3 1", CyclesUtils.getCyclesString("2 0 6 3 1 6 3 1 6 3 1"));
+		Assert.assertEquals("6 3 1", CyclesUtils.getCyclesString("2 0 6 3 1 6 3 1 6 3 1"));
+		Assert.assertEquals("1 2 3", CyclesUtils.getCyclesString("1 2 3 1 2 3"));
 		Assert.assertEquals("44", CyclesUtils.getCyclesString("4444444444"));
 	}
 

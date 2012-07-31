@@ -6,6 +6,7 @@ public class CyclesUtils {
 		if (str.equals("")) {
 			return null;
 		}
+		str = " " + str;
 
 		int len = str.length();
 		for (int i = 2; i <= len / 2; i++) {

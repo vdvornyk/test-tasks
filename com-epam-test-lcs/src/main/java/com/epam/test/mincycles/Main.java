@@ -1,18 +1,25 @@
 package com.epam.test.mincycles;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
+import org.apache.commons.io.FileUtils;
+
 public class Main {
 
 	/**
 	 * @param args
+	 * @throws IOException
 	 */
-	public static void main(String[] args) {
-		String s = "6 1 3 6 11111 3 6 11111 3";
+	public static void main(String[] args) throws IOException {
 
-		String res = CyclesUtils.getCyclesString(s);
-		if (res != null) {
-			System.out.println("result:" + res.trim());
-		} else {
-			System.out.println("No cycles");
+		List<String> lines = FileUtils.readLines(new File(args[0]));
+		for (String line : lines) {
+			String res = CyclesUtils.getCyclesString(line);
+			if (res != null) {
+				System.out.println(res);
+			}
 		}
 	}
 }
