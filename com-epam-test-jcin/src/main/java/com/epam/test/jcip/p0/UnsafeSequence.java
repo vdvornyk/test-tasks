@@ -1,4 +1,6 @@
-package com.epam.test.jcip.ch1;
+package com.epam.test.jcip.p0;
+
+import net.jcip.annotations.NotThreadSafe;
 
 /**
  * UnsafeSequence
@@ -6,6 +8,7 @@ package com.epam.test.jcip.ch1;
  * @author Brian Goetz and Tim Peierls
  */
 
+@NotThreadSafe
 public class UnsafeSequence {
 	private int value;
 

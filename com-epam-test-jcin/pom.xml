@@ -4,4 +4,19 @@
   <artifactId>com-epam-test-jcip</artifactId>
   <version>0.0.1</version>
   <description>Learning "Java Concurency in Practice" all ch will be here</description>
+	
+  <dependencies>
+	<dependency>
+	<groupId>net.jcip</groupId>
+	<artifactId>jcip-annotations</artifactId>
+	<version>1.0</version>
+</dependency>
+            
+            <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.0.1</version>
+</dependency>
+  </dependencies>
+
 </project>
