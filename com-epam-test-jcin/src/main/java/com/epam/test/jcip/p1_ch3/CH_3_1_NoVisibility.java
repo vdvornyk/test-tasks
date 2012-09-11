@@ -1,5 +1,4 @@
-package net.jcip.examples;
-
+package com.epam.test.jcip.p1_ch3;
 
 /**
  * NoVisibility
@@ -9,7 +8,7 @@ package net.jcip.examples;
  * @author Brian Goetz and Tim Peierls
  */
 
-public class NoVisibility {
+public class CH_3_1_NoVisibility {
 	private static boolean ready;
 	private static int number;
 
@@ -21,20 +20,8 @@ public class NoVisibility {
 		}
 	}
 
-	private static class ReaderRunnable implements Runnable {
-
-		@Override
-		public void run() {
-			while (!ready)
-				Thread.yield();
-			System.out.println(number);
-
-		}
-
-	}
-
 	public static void main(String[] args) {
-		new Thread(new ReaderRunnable()).run();
+		new ReaderThread().start();
 		number = 42;
 		ready = true;
 	}
