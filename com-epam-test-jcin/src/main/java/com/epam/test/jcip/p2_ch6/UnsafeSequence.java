@@ -1,4 +1,4 @@
-package com.epam.test.jcip.p2;
+package com.epam.test.jcip.p2_ch6;
 
 /**
  * UnsafeSequence
