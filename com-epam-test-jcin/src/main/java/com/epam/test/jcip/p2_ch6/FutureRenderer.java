@@ -30,6 +30,7 @@ public abstract class FutureRenderer {
 		};
 
 		Future<List<ImageData>> future = executor.submit(task);
+
 		renderText(source);
 
 		try {
